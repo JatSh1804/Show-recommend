@@ -1,0 +1,204 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    /* text-align: center; */
+    color: white;
+    background-color: RGB(16, 18, 24);
+    font-family: Arial;
+}
+
+
+
+nav {
+    justify-content: space-between;
+    position: fixed;
+    width: 80%;
+    top: 0;
+    backdrop-filter: blur(10px);
+    z-index: 999;
+}
+.ShowPage{
+    display: none;
+}
+
+nav li {
+    margin: auto 40px;
+    text-align: center;
+    font-weight: 500;
+    font-size: large;
+    color: white;
+    cursor: pointer;
+}
+
+.logoDiv {
+    display: flex;
+    max-width: 100px;
+}
+
+.logoDiv span {
+    margin: auto;
+    font-weight: 700;
+    color: grey;
+    font-size: x-large;
+}
+
+input:active {
+    border: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    padding: auto 100px;
+}
+
+body {
+    margin: auto;
+    width: 80vw;
+    /* background-color: #000; */
+}
+.item img{
+    height: 80%;
+}
+ img {
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    font-family: Arial;
+    font-size: x-large;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+h2{
+    margin: 10px auto;
+    /* font-size: x-larger; */
+    font-weight: 700;
+}
+
+.genre {
+    margin-top: 150px;
+    padding: auto 100px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 100%);
+    overflow: hidden;
+    scroll-behavior: smooth;
+    /* background-color: RGB(25, 29, 32); */
+    /* margin-top: 100px; */
+}
+
+.wrapper section {
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    margin: 20px 0;
+}
+.row{
+    padding: auto 10px;
+}
+
+.item {
+    padding: 0 2px;
+    transition: 250ms all;
+    gap: 10px;
+    text-align: center;
+   
+}
+
+.item p,p,span{
+    color: grey;
+    margin-bottom: 10px;
+}
+.rating{
+    margin-bottom: 50px;
+}
+.item:hover {
+    margin: 0 0 30px;
+    transform: scale(1.08);
+}
+
+.wrapper section .arrow__btn {
+    position: absolute;
+    color: #fff;
+    text-decoration: none;
+    font-size: 6em;
+    /* background: #000; */
+    width: 80px;
+    padding: 20px;
+    text-align: center;
+    z-index: 1;
+}
+
+.wrapper section a:nth-of-type(1) {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+.wrapper section a:nth-of-type(2) {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+@media only screen and (max-width: 600px) {
+    a.arrow__btn {
+        display: none;
+    }
+}
+.content{
+    height: 80vh;
+    background-color: RGB(24, 28, 32);
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 50% 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+    filter: blur(px);
+    
+}
+.info{
+    /* width: 100%; */
+    /* backdrop-filter: blur(3px); */
+    /* height: 100%; */
+    filter: blur(0);
+}
+.title{
+    font-size: xx-large;
+}
+.info span{
+    width: fit-content;
+}
+.btnDiv{
+    padding: 5px;
+    height: 75px;
+}
+button{
+    font-weight: 650;
+    padding: 10px 15px;
+    border-radius: 50px;
+    margin: 4px 0 15px 4px;
+}
+button:active{
+    border: 2px solid white;
+    transform: translateY(-2px);
+}
+.ticketBtn{ 
+    font-weight: 600;
+    padding: 10px 15px;
+    background-color: RGB(95, 26, 136);
+}
+.trailerBtn{
+    padding: 8px 13px;    
+    border: 2px solid white;
+}
